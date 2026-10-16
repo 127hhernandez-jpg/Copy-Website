@@ -1,0 +1,26 @@
+body {
+    background-color: #1C4587;
+    color: white;
+}
+#Uni{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    img{
+        width: 45%;
+        height: 45%;
+    }
+    p{
+        text-align: center;
+    }
+}
+#robo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+
+.carousel{
+    position: relative;
+    max-width: 100%;
+}
