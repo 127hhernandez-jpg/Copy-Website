@@ -7,57 +7,82 @@
     <script src = "index.js"> </script>
 </head>
 <body onload = "website()">
+<button onclick="toggleSideBar()" id = "sidebar" > </button>
 <h1> Computer Science Magnet Program </h1>
-<div id = "carousel">
-    <img src = "https://i.ytimg.com/vi/CxGSnA-RTsA/hqdefault.jpg">
-    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC419YNLNoMlVD9UEzQbpVPLFnxwy7xSdbrMFJ4holrAcQeIO_OUa7HCfD&s=10">
-    <img src = "https://wp-media.petersons.com/blog/wp-content/uploads/2018/01/26100309/blur-close-up-code-computer-546819.jpg">
+<div class = "carousel">
+    <div class = "carousel-track-container">
+    <ul class = "carousel-track">
+        <li class = "carousel-slide current slide">
+            <img src = "https://i.ytimg.com/vi/CxGSnA-RTsA/hqdefault.jpg" alt = "Slide 1">
+        </li>
+        <li class = "carousel-slide">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC419YNLNoMlVD9UEzQbpVPLFnxwy7xSdbrMFJ4holrAcQeIO_OUa7HCfD&s=10" alt = "Slide 2">
+        </li>
+        <li class = "carousel-slide">
+            <img src = "https://wp-media.petersons.com/blog/wp-content/uploads/2018/01/26100309/blur-close-up-code-computer-546819.jpg" alt = "Slide 3">
+        </li>
+    </ul>
+    <button class = "btnPrev" id = "prevBtn"></button>
+    <button class = "btnNxt" id = "nextBtn"></button>
+    </div>
 </div>
 <p> The Computer Science Magnet Program is a rigorous four-year course of study designed for students who have an interest in computer science, technology, engineering, data, cybersecurity, and emerging fields such as artificial intelligence. The program provides students with the opportunity to develop a strong foundation in computer science while applying computational thinking, programming, mathematics, and problem-solving skills to authentic and increasingly complex challenges. </p>
 <p> The goal of the program is to prepare students for continued study and success in computer science and related STEM fields while developing the technical skills, creativity, collaboration, communication, and adaptability needed to thrive in a rapidly changing technological landscape. Students learn not only how to write code, but also how to design solutions, analyze data, develop algorithms, understand computing systems, consider the ethical implications of technology, and apply their knowledge to real-world problems.</p>
 <p> Students take a dedicated computer science course each year, with a progression that builds from foundational principles and programming to advanced computer science concepts, data structures and algorithms, cybersecurity, web development, discrete mathematics, artificial intelligence, and independent application of these skills. </p>
 <h1> Courses Offered in the program </h1>
 <p> The following courses are program specific courses that all students in the program take. Click on a course name to get the official curriculum document. </p>
-<h2> AP Computer Science Principles </h2>
+<a href = "https://docs.google.com/document/d/1fe8WqC-8ANao3NeNtd517elGpjtQd-Mb7myZg2J4xYY/edit?usp=sharing" alt = "APCSP">
+    <h2> AP Computer Science Principles </h2>
+</a>
 <div id = "course">
-
 <a href = "https://apstudents.collegeboard.org/courses/ap-computer-science-principles" alt = "ap image">
     <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O3sc1bqUAe1XG8LBYb8_gLjGo7YBRGk4uCpZYdX8fg&s=10">
 </a>
 </div>
 <p> Freshman students begin with AP Computer Science Principles, which introduces the foundational ideas of computer science and computational thinking. Students explore programming, algorithms, data, the internet, cybersecurity, computing innovations, and the impact of technology on individuals and society. Through hands-on projects, students learn to develop computational solutions while building an understanding of the broader field of computer science. </p>
-<h2> AP Computer Science A </h2>
-<div>
+<div id = "apButton">
+<a href = "https://docs.google.com/document/d/1HQrQpz4c7BPawGUj5knEQYSd88lH2uRgwz2KuLSGBWw/edit?usp=sharing" alt = "APCSA">
+<h2> AP Computer Science A</h2>
+</a>
 <a href = "https://apstudents.collegeboard.org/courses/ap-computer-science-a" alt = "ap image">
     <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O3sc1bqUAe1XG8LBYb8_gLjGo7YBRGk4uCpZYdX8fg&s=10">
 </a>
 </div>
 <p> Sophomores advance to AP Computer Science A, which provides a rigorous introduction to object-oriented programming and software development using the Java programming language. Students design, implement, test, and analyze programs while developing their understanding of data structures, algorithms, abstraction, and problem solving. The course emphasizes writing effective code and applying programming concepts to increasingly complex problems. </p>
-<h2> Honors Data Structures and Algorithms </h2>
+<a href = "https://docs.google.com/document/d/1EKe8ApCdyGswZcFHimbYrD_YyvYTdRvnyIlS0eeZWWc/edit?usp=sharing" alt = "HDSA">
+    <h2> Honors Data Structures and Algorithms </h2>
+</a>
 <p> Juniors take Data Structures & Algorithms, where students build upon their programming foundation and explore more advanced approaches to organizing, processing, and analyzing information. Students study data structures, algorithm design and efficiency, searching and sorting techniques, recursion, and computational problem-solving while applying these concepts through substantial programming projects. The course challenges students to think critically about not only whether a solution works, but also how effectively and efficiently it works. </p>
-<h2> Honors Computer Science Senior Capstone: Web, Data, and AI </h2>
+<a href = "https://docs.google.com/document/d/1VPM1zYZzSlGkjDre80V5IrqwnBAaFGxt4L4tO11R1X0/edit?usp=sharing" alt = "HCSSCWDA">
+    <h2> Honors Computer Science Senior Capstone: Web, Data, and AI </h2>
+</a>
 <p> The Senior Capstone provides students with an opportunity to bring together the knowledge and skills developed throughout the four-year program. Students work individually or collaboratively to identify a meaningful problem or opportunity and design, develop, test, and present a technology-based solution. Capstone projects may incorporate procedural generation, databases and data analysis, machine learning and artificial intelligence, cybersecurity, or other areas of student interest. Students are expected to document their process, evaluate their solutions, communicate their work, and reflect on the challenges and decisions involved in developing their projects. At the same time students learn web development skills for both front and back end development, database management, and the basic principles of machine learning. </p>
-<h2> Honors Discrete Math and Cybersecurity </h2>
+<a href = "https://docs.google.com/document/d/1OOcgEaf3etS67lBQ-YZ1VLIybsRjvmGBehnaR_O1wvc/edit?usp=sharing" alt = "HDMC">
+    <h2> Honors Discrete Math and Cybersecurity </h2>
+</a>
 <p> Seniors take a course on Discrete Math and Cybersecurity. Discrete mathematics provides students with mathematical foundations relevant to computer science, including logic, sets, functions, combinatorics, graph theory, probability, and algorithmic reasoning. Students also explore cybersecurity principles and practices. </p>
 <h1> Extracurricular Opportunities </h1>
 <h2> Robotics </h2>
-<div id = "robo">
+<div id = "robotics">
 <img src  = "https://upload.wikimedia.org/wikipedia/en/e/ee/FIRST_Tech_challenge_logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original">
 <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF95OoSnAg6zgnWCFrwsBhhdHBsTSOAaVbWTYvZrBCu4bT92mNwoQeIZ8&s=10">
 </div>
 <p> Our robotics club was founded by a passionate group of students in 2024. The 2025-2026 school year marked our first year of competition, with many students learning robotics from the ground up. Through self-directed learning, teamwork, and determination, students developed their technical skills while also fundraising for equipment and registration fees. We competed in three major competitions, including FIRST Tech Challenge and Botball, and earned awards at both of them. We’re building on that experience and preparing for future exciting seasons of competition. </p>
 <h1> Cybersecurity </h1>
 <p> Our cybersecurity club competes in different style competitions: some to secure systems and some to exploit vulnerabilities. In the CyberPatriots competition, students compete in a series of online competition rounds where teams are given a set of virtual operating systems and are tasked with finding and fixing cybersecurity vulnerabilities while maintaining critical services. Recently, the team has won the state for the past 2 years. We had 2 teams ranked in the top 50 in the world. We also compete in many Capture-the-Flag (CTF) competitions and have won several including RUSecure and MetaCTF. </p>
-<div id = "cyber">
-<img src = "https://www.uscyberpatriot.org/app/themes/cp25/images/cp-logo-white.png">
-<img src = "https://ctftime.org/media/cache/8b/f7/8bf7286468be926a57db6471af9003b7.png">
-<img src = "https://rusecurectf.radford.edu/themes/radford/static/img/RUCTFlogo.png">
+<div id = "CyberSecurity">
+    <img src = "https://www.uscyberpatriot.org/app/themes/cp25/images/cp-logo-white.png">
+    <img src = "https://ctftime.org/media/cache/8b/f7/8bf7286468be926a57db6471af9003b7.png">
+    <img src = "https://rusecurectf.radford.edu/themes/radford/static/img/RUCTFlogo.png">
 </div>
 <h1> Computer Science League </h1>
 <p> In our Computer Science League, students participate in various programming competitions, including competitions at Monmouth University, Lockheed Martin, and at Rowan University. Students also explore discrete math topics such as boolean algebra, bit string flicking and computer number systems. </p>
-<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIlDYUyLCZKGsTxD9iEfC6dRPsQq4IZIU6h4VSzxlPA&s">
-<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB8aKYeBF2tmGangityQFFnFuV9YiWIP2pg3xZpOpPeA&s=10">
-<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuqYueZ_J3o5pg8lSQnXAi8G12oDnACw5f8T5e_S3C&s">
+
+<div id = "CSL">
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIlDYUyLCZKGsTxD9iEfC6dRPsQq4IZIU6h4VSzxlPA&s">
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB8aKYeBF2tmGangityQFFnFuV9YiWIP2pg3xZpOpPeA&s=10">
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuqYueZ_J3o5pg8lSQnXAi8G12oDnACw5f8T5e_S3C&s">
+</div>
 <h1> Computing Inspiration & Mentorship Association </h1>
 <p> A brand-new club focusing on pairing mentors and mentees to help foster inspiration and help struggling underclassmen. </p>
 <h1> Some of the colleges students have gone to </h1>
