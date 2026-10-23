@@ -1,23 +1,15 @@
 console.log('Happy developing ✨')
 const menuButton = document.getElementById('menuButton');
-const navGroups = document.getElementsByClassName('navGroup');
+const navGroups = document.querySelectorAll(".nav-group");
 const slides = document.getElementsByClassName('slide');
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
+const prevButton = document.getElementById("prevBtn");
+const nextButton = document.getElementById("nextBtn");
 let current = 0;
-function website(){
-    let ls = localStorage.getItem();
-}
 
 function toggleSideBar(){
-    const sidebar = document.getElementById("sidebar");
-    const main = document.getElementById("mainContent");
-    const openButton = document.getElementById("open");
-    sidebar.classList.toggle("closed");
-    const isClosed = sidebar.classList.contains("closed");
-    main.classList.toggle("open", isClosed);
-    openButton.classList.toggle("visible", isClosed);
+    document.body.classList.toggle("sidebar-hidden");
 }
+menuButton.addEventListener("click", toggleSideBar);
 
 navGroups.forEach((group) => {
     group.querySelector(".nav-main").addEventListener("click", () => {
